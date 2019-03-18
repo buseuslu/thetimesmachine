@@ -9,7 +9,7 @@ const Home = () => {
             The Times Machine
           </p>
           <p className="subtitle">
-            Blast to the past via the NYTimes Archive
+             via the NYTimes Archive
           </p>
         </div>
       </div>
