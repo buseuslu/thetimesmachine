@@ -1,7 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
-const DotEnv = require('dotenv-webpack')
+
+require('dotenv').config()
 
 module.exports = {
   entry: './src/app.js',
@@ -31,6 +32,6 @@ module.exports = {
       filename: 'index.html',
       inject: 'body'
     }),
-    new DotEnv()
+    new webpack.EnvironmentPlugin({...process.env})
   ]
 }
