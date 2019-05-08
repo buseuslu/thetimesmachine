@@ -118,6 +118,3 @@ class SearchesNew extends React.Component {
 
 
 export default SearchesNew
-
-// <img src={'https://www.nytimes.com/' + story.multimedia[0].url} />
-// {story.multimedia && <img src={'https://www.nytimes.com/' + story.multimedia[0].url} />}
