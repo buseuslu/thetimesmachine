@@ -30,8 +30,6 @@ class Randomizer extends React.Component {
   }
 
   handleClick(e) {
-    // const randMonth = Math.ceil(Math.random() * 12)
-    // const randYear = Math.floor(Math.random() * (2017 - 1920) + 1920)
     this.setState({ loading: 'true' })
     e.preventDefault()
     console.log(this.state.data.year, this.state.data.month, key)
@@ -40,7 +38,6 @@ class Randomizer extends React.Component {
         const stories = res.data.response.docs.filter(story => story.keywords.find(item => {
           return (item.value.includes('Technology') || item.value.includes('TECHNOLOGY'))
         }) || (story.section_name !== null && story.section_name.includes('Technology')))
-        // stories = stories.filter(story => story.multimedia.length > 0)
         this.setState({ stories, loading: 'false' })
       })
       .catch(err => console.log(err))
@@ -78,7 +75,8 @@ class Randomizer extends React.Component {
       <div className="container has-text-centered">
         <div className="section">
           <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-            <button onClick={this.handleReset} className="button is-black has-text-white">Randomize Again?</button></Animated>
+            <button onClick={this.handleReset} className="button is-black has-text-white">Randomize Again?</button>
+          </Animated>
         </div>
         <div className="section is-marginless is-paddingless">
           <h1 id="h1" className="title is-4">Displaying Results for {months[this.state.data.month]} {this.state.data.year}</h1>

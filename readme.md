@@ -1,22 +1,19 @@
-# WDI-Project 2
 ## The Times Machine App
-General Assembly Project 2: Reactathon App
+# WDI-Project 2
+![ga_cog_large_red_rgb](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png)
 
 ## Goal
-To create a simple search app using React
+The goal was to build build a React application that consumes a public API.
 
 ## Timeframe
 2 days
 
 ## Technologies used
-* HTML5, CSS - Bulma(CSS Framewok)
+* HTML5, CSS - Bulma(CSS Framework)
 * JavaScript (ES6) + jQuery
 * React
+* API: The New York Times Archive
 * Insomnia
-
-# Links
-### Github
-https://github.com/buseuslu/thetimesmachine
 
 ### Website
 https://the-times-machine.herokuapp.com/
@@ -59,8 +56,8 @@ The creation of our app began with testing out the NYT Archive API. After experi
 * To get random news (randomizer)
 
 # Wins
-* Strengthened our knowledge of React
+* Strengthened my knowledge of React
 * Creating a “Randomizer” function
 
 # Future Features
-* Make background image responsive
+* Make it responsive
